@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -154,6 +158,7 @@ html {
   cursor: pointer;
   color: white;
   margin-top: 20px;
+  font-size: 15px;
 }
 
 .button img {
@@ -223,7 +228,7 @@ html {
 }
 
 .contact p {
-  font-size: 20px;
+  font-size: 17px;
   color: #919191;
 }
 
@@ -269,7 +274,7 @@ html {
 
 .social-media a {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 20px;
   width: 300px;
 }
@@ -425,7 +430,7 @@ footer {
 }
 
 .card-community h2 {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .card-community h2:nth-child(2) {
@@ -433,7 +438,9 @@ footer {
 }
 
 .card-community p {
-  font-size: 20px;
+  font-size: 17px;
+  margin-top: 10px;
+  color: #919191;
 }
 
 .grid-container h2 {
@@ -443,6 +450,7 @@ footer {
 
 .grid-container p {
   font-size: 15px;
+  color: #919191;
 }
 
 .grid-container {
@@ -526,7 +534,7 @@ footer {
 
 .card-about p {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 17px;
   color: #919191;
 }
 
