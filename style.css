@@ -426,6 +426,9 @@ footer {
     width: 100%;
     margin: 20px;
   }
+  footer {
+    font-size: 9px;
+  }
 }
 
 /* section comunity */
