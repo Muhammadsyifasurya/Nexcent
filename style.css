@@ -43,6 +43,12 @@ html {
   font-size: 17px;
 }
 
+.nav-list a img {
+  display: none;
+  width: 13px;
+  margin-right: 7px;
+}
+
 .nav-list li {
   margin: 0 15px;
 }
@@ -109,7 +115,9 @@ html {
     max-width: 200px;
     left: -250px; /* Mulai di luar layar */
     background-color: #333; /* Warna latar belakang menu */
+    backdrop-filter: blur(10px);
     padding: 15px;
+    align-items: flex-start;
     border-radius: 8px; /* Sudut melengkung */
     transition: left 0.3s ease; /* Transisi halus untuk perubahan posisi */
   }
@@ -117,6 +125,10 @@ html {
   .nav-list li a {
     color: white;
     opacity: 100%;
+  }
+
+  .nav-list a img {
+    display: inline-block;
   }
 
   .nav-list.show {
@@ -140,12 +152,12 @@ html {
 }
 
 .container h2 {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .container p {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .button {
@@ -386,6 +398,8 @@ footer {
   .our-client {
     margin-top: 0;
     padding-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   .our-client h2 {
@@ -393,6 +407,7 @@ footer {
   }
 
   .our-client p {
+    text-align: center;
     font-size: 15px;
   }
 
@@ -536,6 +551,7 @@ footer {
   margin-top: 20px;
   font-size: 17px;
   color: #919191;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
