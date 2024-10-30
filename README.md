@@ -1,12 +1,14 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/f-sXtHED)
 
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/f-sXtHED)
+
 # Project Title: Professional Website Development
 
 _Creator: Muhammad Syifa Surya Saputra_
 
 ## Overview
 
-This project showcases a professional website developed for enhancing business presence online. It includes a responsive design and user-friendly navigation, tailored to attract clients. However, the website is not yet optimized for mobile display.
+This project showcases a professional website developed to enhance business presence online. It includes a responsive design and user-friendly navigation, tailored to attract clients. However, the website is not yet fully optimized for mobile display.
 
 ## Features
 
@@ -23,3 +25,10 @@ This project employs Semantic HTML, which enhances the accessibility and SEO of 
 ## Conclusion
 
 This project reflects my commitment to delivering high-quality websites that meet client needs and enhance their online presence while adhering to best practices in web development. Ongoing improvements will focus on mobile optimization to ensure a seamless user experience across all devices.
+
+## Future Improvements
+
+- **Mobile Optimization**: Enhancing the mobile display to ensure all elements are easily accessible on smaller screens.
+- **Performance Enhancements**: Implementing strategies to improve loading times and overall site performance.
+- **SEO Optimization**: Further refining SEO strategies to increase visibility in search engines.
+- **User Feedback Integration**: Collecting user feedback to make informed updates and improvements to the site.
