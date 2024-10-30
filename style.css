@@ -111,10 +111,9 @@ html {
     top: 40px; /* Jarak dari atas navbar */
     height: 100vh;
     width: 100%;
-    opacity: 80%;
     max-width: 200px;
     left: -250px; /* Mulai di luar layar */
-    background-color: #333; /* Warna latar belakang menu */
+    background-color: rgb(0 0 0 / 60%); /* Warna latar belakang menu */
     backdrop-filter: blur(10px);
     padding: 15px;
     align-items: flex-start;
