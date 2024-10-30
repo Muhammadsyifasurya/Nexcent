@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="asset/Icon.svg">
+    <title>Nexcent</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-toggle" onclick="toggleMenu(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="asset/Logo.svg" alt="Logo man">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#ourclient">Our Client</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <!-- <button class="nav-button">Register Now <img src="asset/ic_panah.svg" alt="panah"></button> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Your Professional Website Development Partner</h2>
+                <p>We create personalized websites to enhance your business presence online and attract clients</p>
+                <button class="button">Learn More <img src="asset/ic_panah.svg" alt=""></button>
+            </div>
+            <img class="img" src="asset/bg_section_1.svg" alt="ini Gambar">
+        </section>
+
+        <section class="about" id="about">
+            <div class="bg-about">
+                <img src="asset/bg_section_2.svg" alt="background 2">
+            </div>
+            <div class="card-about">
+                <h2>Your Trusted Partner in Building Websites that Reflect Your Brand and Drive Results</h2>
+                <p>With a focus on crafting tailored solutions, we aim to create websites that are more than just
+                    visually appealing. Our team believes that each site should tell your unique story, resonate with
+                    your audience, and encourage engagement through intuitive design and seamless functionality. From
+                    the initial concept to the final launch, we’re here to bring your vision to life and support you in
+                    reaching your business goals. Let us help you make a lasting impression in today’s competitive
+                    digital landscape.</p>
+                <button class="button">Our Story<img src="asset/ic_panah.svg" alt=""></button>
+            </div>
+        </section>
+
+        <section class="our-client" id="ourclient">
+            <div class="card-client">
+                <h2>Our Client</h2>
+                <p>We have been working with some Fortune 500 + client</p>
+                <ul>
+                    <li><img src="asset/Vector.svg" alt=""></li>
+                    <li><img src="asset/Logo (1).svg" alt=""></li>
+                    <li><img src="asset/Logo (2).svg" alt=""></li>
+                    <li><img src="asset/Logo (3).svg" alt=""></li>
+                    <li><img src="asset/Logo (4).svg" alt=""></li>
+                    <li><img src="asset/Logo (5).svg" alt=""></li>
+                    <li><img src="asset/Logo (6).svg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="community" id="community">
+            <div class="card-community">
+                <h2>Empowering Local</h2>
+                <h2>Businesses to Thrive</h2>
+                <p>Through collaboration and shared passion, we've built a community where every member contributes to
+                    growth and success.</p>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="asset/ic_member.svg" alt="member">
+                    <div>
+                        <h2>2,245,356</h2>
+                        <p>Members</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="asset/ic_groub.svg" alt="member">
+                    <div>
+                        <h2>46,328</h2>
+                        <p>Clubs</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="asset/ic_booking1.svg" alt="member">
+                    <div>
+                        <h2>828,867</h2>
+                        <p>Event Bookings</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="asset/ic_payment1.svg" alt="member">
+                    <div>
+                        <h2>1,926,436</h2>
+                        <p>Payments</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact-us">
+            <h2>Contact Us</h2>
+            <p>Any question or remarks? Just write us a message!</p>
+
+            <div class="card">
+                <div class="contact-information">
+                    <h2>Social Media Information</h2>
+                    <p>Say something to start a live chat!</p>
+                    <div class="social-media">
+                        <a href="https://github.com/muhammadsyifasurya"><i class="fab fa-github"></i>Muhammad
+                            Syifa Surya Saputra</a>
+                        <a href="https://www.instagram.com/muhammadsyifasurya/"><i class="fab fa-instagram"></i>Muhammad
+                            Syifa Surya Saputra</a>
+                        <a href="https://www.linkedin.com/in/muhammadsyifasuryasaputra"><i
+                                class="fab fa-linkedin"></i>Muhammad Syifa Surya Saputra</a>
+                    </div>
+                </div>
+                <form action="#" class="card-form">
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" placeholder="Username" required>
+
+                    <label for="message">Message :</label>
+                    <textarea name="message" id="message" placeholder="Enter Your Message Here..." cols="30"
+                        rows="10"></textarea>
+
+                    <fieldset>
+                        <legend>Choose your preferences</legend>
+                        <label>
+                            <input type="radio" name="contact-method" value="email" required>
+                            Email
+                        </label>
+                        <label>
+                            <input type="radio" name="contact-method" value="phone" required>
+                            Phone
+                        </label>
+                    </fieldset>
+                    <div class="button-send">
+                        <button class="button">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Syifa Surya Saputra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

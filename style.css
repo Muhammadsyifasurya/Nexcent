@@ -1,0 +1,562 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styling bagian Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  z-index: 1000; /* Menjaga navbar di atas elemen lain */
+}
+
+.nav-logo {
+  padding-left: 160px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-right: 160px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list li:hover {
+  border-bottom: 2px solid #4caf4f;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 20px;
+  background-color: rgb(0, 0, 0);
+  margin: 2px 0;
+  transition: all 0.3s ease;
+}
+
+/* Animasi untuk saat hamburger aktif */
+.nav-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(10px); /* Rotasi dan geser bar pertama ke bawah */
+}
+
+.nav-toggle.active .bar:nth-child(2) {
+  opacity: 0; /* Menyembunyikan bar tengah */
+}
+
+.nav-toggle.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px); /* Rotasi dan geser bar ketiga ke atas */
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex; /* Menampilkan hamburger icon di layar kecil */
+    margin-left: 20px;
+  }
+
+  .navbar {
+    height: 40px;
+  }
+
+  .nav-logo {
+    padding-top: 5px;
+    margin-right: 100%;
+    padding-left: 10px;
+  }
+
+  .nav-logo img {
+    width: 100px;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    flex-direction: column; /* Menyusun menu secara vertikal */
+    position: fixed; /* Memungkinkan untuk memposisikan di luar layar */
+    top: 40px; /* Jarak dari atas navbar */
+    height: 100vh;
+    width: 100%;
+    opacity: 80%;
+    max-width: 200px;
+    left: -250px; /* Mulai di luar layar */
+    background-color: #333; /* Warna latar belakang menu */
+    padding: 15px;
+    border-radius: 8px; /* Sudut melengkung */
+    transition: left 0.3s ease; /* Transisi halus untuk perubahan posisi */
+  }
+
+  .nav-list li a {
+    color: white;
+    opacity: 100%;
+  }
+
+  .nav-list.show {
+    left: -10px;
+  }
+}
+
+/* styling bagian main */
+/* Bagian section hero */
+.hero {
+  background-color: #f5f7fa;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 1000px;
+  padding-left: 160px;
+}
+
+.container h2 {
+  font-size: 70px;
+}
+
+.container p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4caf4f;
+  border: none;
+  height: auto;
+  width: auto;
+  padding: 13px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+}
+
+.button img {
+  margin-left: 5px;
+  width: 10px;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+.img {
+  width: 544.32px;
+  height: 566.6px;
+  padding-right: 160px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .container {
+    padding-left: 20px;
+    width: auto;
+  }
+
+  .container h2 {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+
+  .container p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .img {
+    padding-top: 60px;
+    width: 144.32px;
+    height: 166.6px;
+    padding-right: 10px;
+  }
+
+  .button {
+    font-size: 10px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* Styling bagian section Contact Us */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  height: 850px;
+}
+
+.contact h2 {
+  font-size: 40px;
+}
+
+.contact p {
+  font-size: 20px;
+  color: #919191;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  gap: 40px;
+  width: 1100px;
+  height: 660px;
+  background-color: #f5f7fa;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  background-color: #202020;
+  border-radius: 12px;
+  width: 900px;
+  height: 600px;
+  padding: 20px;
+  color: white;
+}
+
+.card-form {
+  gap: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  padding-right: 20px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
+  width: 300px;
+}
+
+.social-media a i {
+  margin-right: 10px;
+}
+
+/* Style umum untuk label */
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Style untuk input text */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+}
+
+.button-send {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-send button {
+  width: auto;
+}
+
+/* styling untuk footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f7fa;
+  align-items: center;
+  height: 40px;
+  font-size: 13px;
+  color: #919191;
+}
+
+/* styling bagian section Our Client */
+.our-client {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  margin-top: 40px;
+}
+
+.card-client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 100px;
+}
+
+.card-client h2 {
+  font-size: 40px;
+}
+
+.card-client p {
+  font-size: 20px;
+  color: #919191;
+}
+
+.card-client ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 70px;
+}
+
+.card-client ul li {
+  list-style-type: none;
+}
+
+.card-client ul li img {
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .our-client {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+
+  .our-client h2 {
+    font-size: 20px;
+  }
+
+  .our-client p {
+    font-size: 15px;
+  }
+
+  .card-client {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .card-client ul li img {
+    width: 30px;
+  }
+  .card-client ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+/* section comunity */
+.community {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f7fa;
+  height: 250px;
+  padding: 60px 320px;
+}
+
+.card-community {
+  width: auto;
+  max-width: 600px;
+}
+
+.card-community h2 {
+  font-size: 60px;
+}
+
+.card-community h2:nth-child(2) {
+  color: #4caf4f;
+}
+
+.card-community p {
+  font-size: 20px;
+}
+
+.grid-container h2 {
+  font-size: 30px;
+  color: #4d4d4d;
+}
+
+.grid-container p {
+  font-size: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+}
+
+.grid-item img {
+  width: 35px;
+}
+
+@media (max-width: 768px) {
+  .community {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 40px 20px;
+  }
+
+  .card-community {
+    text-align: center;
+  }
+
+  .card-community h2 {
+    font-size: 20px;
+  }
+
+  .card-community p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+  .grid-container h2 {
+    font-size: 18px;
+    color: #4d4d4d;
+  }
+
+  .grid-container p {
+    font-size: 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    padding: 20px 0 10px 50px;
+  }
+
+  .grid-item img {
+    width: 28px;
+  }
+}
+
+/* styling for about section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+
+.bg-about img {
+  width: 500px;
+}
+
+.card-about {
+  width: 800px;
+}
+
+.card-about h2 {
+  font-size: 40px;
+}
+
+.card-about p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #919191;
+}
+
+@media (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 20px;
+  }
+
+  .card-about {
+    width: auto;
+  }
+
+  .bg-about img {
+    width: auto;
+  }
+  .card-about h2 {
+    font-size: 22px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .card-about p {
+    font-size: 13px;
+  }
+
+  .card-about button {
+    justify-content: center;
+  }
+}
