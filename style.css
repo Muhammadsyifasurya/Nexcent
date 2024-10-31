@@ -29,6 +29,17 @@ html {
   padding-left: 160px;
 }
 
+.nav-logo img {
+  transition: transform 0.4s ease, opacity 0.4s ease, filter 0.4s ease;
+}
+
+/* Animasi saat hover */
+.nav-logo img:hover {
+  transform: scale(1.2);
+  opacity: 0.9;
+  filter: hue-rotate(15deg); /* Memberikan sedikit perubahan warna */
+}
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -117,6 +128,7 @@ html {
     backdrop-filter: blur(10px);
     padding: 15px;
     align-items: flex-start;
+    gap: 12px;
     border-radius: 8px; /* Sudut melengkung */
     transition: left 0.3s ease; /* Transisi halus untuk perubahan posisi */
   }
@@ -159,32 +171,70 @@ html {
   font-size: 18px;
 }
 
-.button {
-  background-color: #4caf4f;
-  border: none;
-  height: auto;
-  width: auto;
-  padding: 13px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  margin-top: 20px;
-  font-size: 15px;
-}
-
-.button img {
-  margin-left: 5px;
-  width: 10px;
-}
-
-.button:hover {
-  background-color: #218838;
-}
-
 .img {
   width: 544.32px;
   height: 566.6px;
   padding-right: 160px;
+}
+
+/* styling button */
+button {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 13px 20px;
+  border-radius: 10px;
+  border: 1px solid #424242;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  background-color: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button::before,
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+button::before {
+  left: -10px;
+  background: #0f4b23;
+}
+
+button::after {
+  right: -10px;
+  background: #079b38;
+}
+
+button:hover::before,
+button:hover::after {
+  width: 59%;
+}
+
+button:hover span {
+  color: #a9ffae;
+  transition: 0.3s;
+}
+
+button span {
+  font-size: 15px;
+  transition: all 0.3s ease-in;
+}
+
+button img {
+  margin-left: 5px;
+  width: 12px;
 }
 
 @media (max-width: 768px) {
@@ -217,11 +267,20 @@ html {
     padding-right: 10px;
   }
 
-  .button {
-    font-size: 10px;
+  button {
     width: auto;
     height: auto;
     padding: 10px;
+    border: 1px solid #8d8c8c;
+  }
+
+  button span {
+    font-size: 12px;
+  }
+
+  button:hover::before,
+  button:hover::after {
+    width: 62%;
   }
 }
 
@@ -438,7 +497,7 @@ footer {
   justify-content: space-between;
   background-color: #f5f7fa;
   height: 250px;
-  padding: 60px 320px;
+  padding: 100px 320px 60px 320px;
 }
 
 .card-community {
