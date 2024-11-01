@@ -184,7 +184,7 @@ button {
   height: auto;
   padding: 13px 20px;
   border-radius: 10px;
-  border: 1px solid #424242;
+  border: 1px solid #919191;
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease-in;
@@ -192,6 +192,8 @@ button {
   background-color: transparent;
   margin-top: 20px;
   cursor: pointer;
+  font-weight: bold;
+  color: #4d4d4d;
 }
 
 button::before,
@@ -209,12 +211,12 @@ button::after {
 
 button::before {
   left: -10px;
-  background: #0f4b23;
+  background: #24a04d;
 }
 
 button::after {
   right: -10px;
-  background: #079b38;
+  background: #17e25b;
 }
 
 button:hover::before,
@@ -223,8 +225,9 @@ button:hover::after {
 }
 
 button:hover span {
-  color: #a9ffae;
+  color: #b1ffbc;
   transition: 0.3s;
+  font-weight: bold;
 }
 
 button span {
@@ -356,7 +359,7 @@ button img {
 /* Style umum untuk label */
 label {
   display: block;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
   margin-bottom: 8px;
   color: #333;
@@ -416,15 +419,18 @@ footer {
 .our-client {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 40px;
   margin-top: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .card-client {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 100px;
+  overflow: hidden;
+  margin-top: 40px;
 }
 
 .card-client h2 {
@@ -436,28 +442,118 @@ footer {
   color: #919191;
 }
 
-.card-client ul {
+/* .card-client ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: max-content;
   margin: 70px;
+  animation: runSlider 5s linear infinite;
+  background-color: #079b38;
 }
 
 .card-client ul li {
   list-style-type: none;
+  margin-right: 20px;
+  width: 150px;
 }
 
 .card-client ul li img {
   width: 100px;
 }
 
+@keyframes runSlider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100%));
+  }
+} */
+
+.position-1 {
+  --position: 1;
+}
+.position-2 {
+  --position: 2;
+}
+.position-3 {
+  --position: 3;
+}
+.position-4 {
+  --position: 4;
+}
+.position-5 {
+  --position: 5;
+}
+.position-6 {
+  --position: 6;
+}
+.position-7 {
+  --position: 7;
+}
+.position-8 {
+  --position: 8;
+}
+.position-9 {
+  --position: 9;
+}
+.position-10 {
+  --position: 10;
+}
+
+.slider {
+  --width: 100px;
+  --height: 90px;
+  --quantity: 10;
+  width: 100%;
+  height: 100px;
+  padding: 60px 0 80px 0;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+
+.slider .list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+
+.slider .list .item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear infinite;
+  transition: filter 0.5s;
+  animation-delay: calc(
+    (10s / var(--quantity)) * (var(--position) - 1) - 10s
+  ) !important;
+}
+
+.slider .list .item img {
+  width: 100%;
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+.slider:hover .item {
+  animation-play-state: paused !important;
+}
+
 @media (max-width: 768px) {
   .our-client {
     margin-top: 0;
     padding-top: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .our-client h2 {
@@ -468,8 +564,15 @@ footer {
     text-align: center;
     font-size: 15px;
   }
+  .slider {
+    padding: 40px 0;
+    height: 50px;
+  }
+  .slider .list .item img {
+    width: 50%;
+  }
 
-  .card-client {
+  /* .card-client {
     width: auto;
     height: auto;
     margin: 0;
@@ -484,7 +587,7 @@ footer {
     justify-content: space-around;
     width: 100%;
     margin: 20px;
-  }
+  } */
   footer {
     font-size: 9px;
   }
