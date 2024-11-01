@@ -293,7 +293,8 @@ button img {
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
-  height: 850px;
+  max-height: 850px;
+  padding-bottom: 60px;
 }
 
 .contact h2 {
@@ -310,7 +311,7 @@ button img {
   justify-content: space-between;
   padding: 15px;
   gap: 40px;
-  width: 1100px;
+  max-width: 1100px;
   height: 660px;
   background-color: #f5f7fa;
   margin-top: 20px;
@@ -402,6 +403,71 @@ fieldset {
 
 .button-send button {
   width: auto;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .contact h2 {
+    font-size: 20px;
+  }
+
+  .contact p {
+    font-size: 13px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .contact-information {
+    width: 85%;
+    padding: 30px 25px 30px 25px;
+    height: auto;
+  }
+
+  .social-media a {
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 0;
+  }
+
+  .social-media a:hover {
+    color: #4caf4f;
+  }
+
+  .card-form {
+    margin-top: 0;
+    width: 100%;
+    max-width: 300px;
+    padding: 0;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="text"] textarea {
+    font-size: 13px;
+  }
+
+  legend {
+    font-size: 14px;
+  }
+
+  textarea {
+    height: 90px;
+  }
+
+  fieldset {
+    height: 90px;
+  }
 }
 
 /* styling untuk footer */
