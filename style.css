@@ -351,6 +351,11 @@ button img {
   font-size: 18px;
   margin-left: 20px;
   width: 300px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #4caf4f;
 }
 
 .social-media a i {
