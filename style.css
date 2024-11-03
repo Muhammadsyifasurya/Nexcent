@@ -299,9 +299,11 @@ button img {
 
 .contact h2 {
   font-size: 40px;
+  text-align: center;
 }
 
 .contact p {
+  text-align: center;
   font-size: 17px;
   color: #595959;
 }
@@ -325,8 +327,12 @@ button img {
   border-radius: 12px;
   width: 900px;
   height: 600px;
-  padding: 20px;
+  padding: 50px 10px 0px 10px;
   color: white;
+}
+
+.contact-information p {
+  color: #adadad;
 }
 
 .card-form {
@@ -343,13 +349,13 @@ button img {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 50px;
+  align-items: center;
 }
 
 .social-media a {
   color: #fff;
   font-size: 18px;
-  margin-left: 20px;
   width: 300px;
   text-decoration: none;
 }
@@ -437,10 +443,14 @@ fieldset {
     height: auto;
   }
 
+  .social-media {
+    margin-top: 20px;
+    align-items: center;
+  }
+
   .social-media a {
     font-size: 13px;
-    text-decoration: none;
-    margin-left: 0;
+    text-align: center;
   }
 
   .social-media a:hover {
