@@ -354,6 +354,8 @@ button img {
 }
 
 .social-media a {
+  display: flex;
+  align-items: center;
   color: #fff;
   font-size: 18px;
   width: 300px;
@@ -364,8 +366,9 @@ button img {
   color: #4caf4f;
 }
 
-.social-media a i {
+.social-media a img {
   margin-right: 10px;
+  height: 19px;
 }
 
 /* Style umum untuk label */
@@ -405,6 +408,10 @@ fieldset {
   padding: 20px;
   margin-top: 10px;
   background-color: #f9f9f9;
+}
+
+fieldset label {
+  cursor: pointer;
 }
 
 .button-send {
