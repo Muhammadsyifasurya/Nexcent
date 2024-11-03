@@ -303,7 +303,7 @@ button img {
 
 .contact p {
   font-size: 17px;
-  color: #919191;
+  color: #595959;
 }
 
 .card {
@@ -483,7 +483,7 @@ footer {
   align-items: center;
   height: 40px;
   font-size: 13px;
-  color: #919191;
+  color: #545454;
 }
 
 /* styling bagian section Our Client */
@@ -510,7 +510,7 @@ footer {
 
 .card-client p {
   font-size: 20px;
-  color: #919191;
+  color: #595959;
 }
 
 /* .card-client ul {
@@ -684,13 +684,13 @@ footer {
 }
 
 .card-community h2:nth-child(2) {
-  color: #4caf4f;
+  color: #285d29;
 }
 
 .card-community p {
   font-size: 17px;
   margin-top: 10px;
-  color: #919191;
+  color: #595959;
 }
 
 .grid-container h2 {
@@ -700,7 +700,7 @@ footer {
 
 .grid-container p {
   font-size: 15px;
-  color: #919191;
+  color: #595959;
 }
 
 .grid-container {
@@ -785,7 +785,7 @@ footer {
 .card-about p {
   margin-top: 20px;
   font-size: 17px;
-  color: #919191;
+  color: #595959;
   text-align: justify;
 }
 
