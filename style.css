@@ -103,58 +103,6 @@ html {
   transform: rotate(-45deg) translateY(-10px); /* Rotasi dan geser bar ketiga ke atas */
 }
 
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: flex; /* Menampilkan hamburger icon di layar kecil */
-    margin-left: 20px;
-  }
-
-  .navbar {
-    height: 40px;
-  }
-
-  .nav-logo {
-    padding-top: 5px;
-    margin-right: 100%;
-    padding-left: 10px;
-  }
-
-  .nav-logo img {
-    width: 100px;
-  }
-
-  .nav-list {
-    list-style-type: none;
-    flex-direction: column; /* Menyusun menu secara vertikal */
-    position: fixed; /* Memungkinkan untuk memposisikan di luar layar */
-    top: 40px; /* Jarak dari atas navbar */
-    height: 100vh;
-    width: 100%;
-    max-width: 200px;
-    left: -250px; /* Mulai di luar layar */
-    background-color: rgb(0 0 0 / 60%); /* Warna latar belakang menu */
-    backdrop-filter: blur(10px);
-    padding: 15px;
-    align-items: flex-start;
-    gap: 12px;
-    border-radius: 8px; /* Sudut melengkung */
-    transition: left 0.3s ease; /* Transisi halus untuk perubahan posisi */
-  }
-
-  .nav-list li a {
-    color: white;
-    opacity: 100%;
-  }
-
-  .nav-list a img {
-    display: inline-block;
-  }
-
-  .nav-list.show {
-    left: -10px;
-  }
-}
-
 /* styling bagian main */
 /* Bagian section hero */
 .hero {
@@ -246,53 +194,6 @@ button span {
 button img {
   margin-left: 5px;
   width: 12px;
-}
-
-@media (max-width: 768px) {
-  .hero {
-    display: flex;
-    flex-direction: column-reverse;
-    height: auto;
-    padding-bottom: 20px;
-  }
-
-  .container {
-    padding-left: 20px;
-    width: auto;
-  }
-
-  .container h2 {
-    padding-top: 10px;
-    font-size: 25px;
-  }
-
-  .container p {
-    font-size: 15px;
-    margin-top: 10px;
-  }
-
-  .img {
-    padding-top: 60px;
-    width: 144.32px;
-    height: 166.6px;
-    padding-right: 10px;
-  }
-
-  button {
-    width: auto;
-    height: auto;
-    padding: 10px;
-    border: 1px solid #8d8c8c;
-  }
-
-  button span {
-    font-size: 12px;
-  }
-
-  button:hover::before,
-  button:hover::after {
-    width: 62%;
-  }
 }
 
 /* Styling bagian section Contact Us */
@@ -431,75 +332,6 @@ fieldset label {
   width: auto;
 }
 
-@media (max-width: 768px) {
-  .contact {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .contact h2 {
-    font-size: 20px;
-  }
-
-  .contact p {
-    font-size: 13px;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-
-  .contact-information {
-    width: 85%;
-    padding: 30px 25px 30px 25px;
-    height: auto;
-  }
-
-  .social-media {
-    margin-top: 20px;
-    align-items: center;
-  }
-
-  .social-media a {
-    font-size: 13px;
-    text-align: center;
-  }
-
-  .social-media a:hover {
-    color: #4caf4f;
-  }
-
-  .card-form {
-    margin-top: 0;
-    width: 100%;
-    max-width: 300px;
-    padding: 0;
-  }
-
-  label {
-    font-size: 14px;
-  }
-
-  input[type="text"] textarea {
-    font-size: 13px;
-  }
-
-  legend {
-    font-size: 14px;
-  }
-
-  textarea {
-    height: 90px;
-  }
-
-  fieldset {
-    height: 90px;
-  }
-}
-
 /* styling untuk footer */
 footer {
   display: flex;
@@ -537,35 +369,6 @@ footer {
   font-size: 20px;
   color: #595959;
 }
-
-/* .card-client ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: max-content;
-  margin: 70px;
-  animation: runSlider 5s linear infinite;
-  background-color: #079b38;
-}
-
-.card-client ul li {
-  list-style-type: none;
-  margin-right: 20px;
-  width: 150px;
-}
-
-.card-client ul li img {
-  width: 100px;
-}
-
-@keyframes runSlider {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100%));
-  }
-} */
 
 .position-1 {
   --position: 1;
@@ -644,51 +447,6 @@ footer {
   animation-play-state: paused !important;
 }
 
-@media (max-width: 768px) {
-  .our-client {
-    margin-top: 0;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .our-client h2 {
-    font-size: 20px;
-  }
-
-  .our-client p {
-    text-align: center;
-    font-size: 15px;
-  }
-  .slider {
-    padding: 40px 0;
-    height: 50px;
-  }
-  .slider .list .item img {
-    width: 50%;
-  }
-
-  /* .card-client {
-    width: auto;
-    height: auto;
-    margin: 0;
-  }
-
-  .card-client ul li img {
-    width: 30px;
-  }
-  .card-client ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    margin: 20px;
-  } */
-  footer {
-    font-size: 9px;
-  }
-}
-
 /* section comunity */
 .community {
   display: flex;
@@ -745,7 +503,317 @@ footer {
   width: 35px;
 }
 
+/* styling for about section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+
+.bg-about img {
+  width: 500px;
+}
+
+.card-about {
+  width: 800px;
+}
+
+.card-about h2 {
+  font-size: 40px;
+}
+
+.card-about p {
+  margin-top: 20px;
+  font-size: 17px;
+  color: #595959;
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  /* styling tablet navbar */
+  .nav-toggle {
+    display: flex; /* Menampilkan hamburger icon di layar kecil */
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+
+  .navbar {
+    height: 60px;
+  }
+
+  .nav-logo {
+    padding-top: 5px;
+    margin-right: 100%;
+    padding-left: 10px;
+  }
+
+  .nav-logo img {
+    width: 160px;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    flex-direction: column; /* Menyusun menu secara vertikal */
+    position: fixed; /* Memungkinkan untuk memposisikan di luar layar */
+    top: 60px; /* Jarak dari atas navbar */
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -450px; /* Mulai di luar layar */
+    background-color: rgb(0 0 0 / 60%); /* Warna latar belakang menu */
+    backdrop-filter: blur(10px);
+    padding: 30px 0 0 40px;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 8px; /* Sudut melengkung */
+    transition: left 0.3s ease; /* Transisi halus untuk perubahan posisi */
+  }
+
+  .nav-list li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 100%;
+    font-size: 28px;
+  }
+
+  .nav-list a img {
+    display: inline-block;
+    width: 25px;
+    padding-right: 10px;
+  }
+
+  .nav-list.show {
+    left: -10px;
+  }
+
+  /* styling tablet hero section*/
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    width: auto;
+  }
+
+  .container {
+    width: auto;
+    padding: 40px;
+  }
+
+  .container h2 {
+    font-size: 40px;
+  }
+
+  .img {
+    width: auto;
+    height: auto;
+    padding-right: 0;
+    padding-top: 90px;
+  }
+
+  /* styling tablet about section */
+  .bg-about img {
+    width: 380px;
+  }
+  .card-about p {
+    font-size: 18px;
+    padding-right: 50px;
+  }
+  .card-about {
+    padding-left: 30px;
+  }
+
+  .community {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0 20px 0;
+    height: auto;
+  }
+  .card-community {
+    text-align: center;
+  }
+
+  .grid-container {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  .our-client {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .contact-information {
+    max-width: 400px;
+  }
+  .card-form {
+    max-width: 500px;
+  }
+}
+
 @media (max-width: 768px) {
+  /* styling tablet navbar */
+  .nav-toggle {
+    display: flex; /* Menampilkan hamburger icon di layar kecil */
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
+  .navbar {
+    height: 40px;
+  }
+
+  .nav-logo {
+    padding-top: 5px;
+    margin-right: 100%;
+    padding-left: 10px;
+  }
+
+  .nav-logo img {
+    width: 100px;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    flex-direction: column; /* Menyusun menu secara vertikal */
+    position: fixed; /* Memungkinkan untuk memposisikan di luar layar */
+    top: 40px; /* Jarak dari atas navbar */
+    height: 100vh;
+    width: 100%;
+    max-width: 200px;
+    left: -250px; /* Mulai di luar layar */
+    background-color: rgb(0 0 0 / 60%); /* Warna latar belakang menu */
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 8px; /* Sudut melengkung */
+    transition: left 0.3s ease; /* Transisi halus untuk perubahan posisi */
+  }
+
+  .nav-list li a {
+    color: white;
+    opacity: 100%;
+    font-size: 16px;
+  }
+
+  .nav-list a img {
+    display: inline-block;
+    width: 15px;
+    padding-right: 3px;
+  }
+
+  .nav-list.show {
+    left: -10px;
+  }
+
+  /* styling tablet hero */
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .container {
+    padding-left: 20px;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .container h2 {
+    font-size: 25px;
+  }
+
+  .container p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .img {
+    padding-top: 60px;
+    width: 144.32px;
+    height: 166.6px;
+  }
+
+  button {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #8d8c8c;
+  }
+
+  button span {
+    font-size: 12px;
+  }
+
+  button:hover::before,
+  button:hover::after {
+    width: 62%;
+  }
+
+  /* styling tablet about */
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 30px 0 0 0;
+  }
+
+  .card-about {
+    width: auto;
+    padding: 0 20px 0 20px;
+  }
+
+  .bg-about img {
+    width: auto;
+  }
+  .card-about h2 {
+    font-size: 22px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .card-about p {
+    font-size: 13px;
+    padding-right: 0;
+  }
+
+  .card-about button {
+    justify-content: center;
+  }
+
+  /* styling tablet our client */
+  .our-client {
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .our-client h2 {
+    font-size: 20px;
+  }
+
+  .our-client p {
+    text-align: center;
+    font-size: 15px;
+  }
+  .slider {
+    padding: 40px 0;
+    height: 50px;
+  }
+  .slider .list .item img {
+    width: 50%;
+  }
+
+  footer {
+    font-size: 9px;
+  }
+
+  /* styling tablet community */
   .community {
     display: flex;
     flex-direction: column;
@@ -785,62 +853,72 @@ footer {
   .grid-item img {
     width: 28px;
   }
-}
 
-/* styling for about section */
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 60px;
-}
-
-.bg-about img {
-  width: 500px;
-}
-
-.card-about {
-  width: 800px;
-}
-
-.card-about h2 {
-  font-size: 40px;
-}
-
-.card-about p {
-  margin-top: 20px;
-  font-size: 17px;
-  color: #595959;
-  text-align: justify;
-}
-
-@media (max-width: 768px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: auto;
-    padding: 20px;
+  /* styling tablet contact */
+  .contact {
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
 
-  .card-about {
-    width: auto;
+  .contact h2 {
+    font-size: 20px;
   }
 
-  .bg-about img {
-    width: auto;
-  }
-  .card-about h2 {
-    font-size: 22px;
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  .card-about p {
+  .contact p {
     font-size: 13px;
   }
 
-  .card-about button {
-    justify-content: center;
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .contact-information {
+    width: 85%;
+    padding: 30px 25px 30px 25px;
+    height: auto;
+  }
+
+  .social-media {
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .social-media a {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .social-media a:hover {
+    color: #4caf4f;
+  }
+
+  .card-form {
+    margin-top: 0;
+    width: 100%;
+    max-width: 300px;
+    padding: 0;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="text"] textarea {
+    font-size: 13px;
+  }
+
+  legend {
+    font-size: 14px;
+  }
+
+  textarea {
+    height: 90px;
+  }
+
+  fieldset {
+    height: 90px;
   }
 }
