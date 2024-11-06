@@ -111,6 +111,11 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: url(./asset/bg_parallax3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container {
@@ -119,18 +124,41 @@ html {
 }
 
 .container h2 {
+  color: #f5f7fa;
   font-size: 60px;
+  text-shadow: 2px 2px 4px #000000;
+  font-weight: bolder;
 }
 
 .container p {
+  color: #f9f9f9;
   margin-top: 20px;
   font-size: 18px;
 }
 
-.img {
-  width: 544.32px;
-  height: 566.6px;
+.responsive-bg {
+  width: auto;
+  height: auto;
   padding-right: 160px;
+}
+
+.img {
+  width: 550px;
+  height: 550px;
+}
+
+.source-medium {
+  width: 225px;
+  height: 225px;
+}
+
+.source-small {
+  width: 10px;
+  height: 10px;
+}
+
+.hero button {
+  color: #f5f7fa;
 }
 
 /* styling button */
@@ -167,21 +195,21 @@ button::after {
 
 button::before {
   left: -10px;
-  background: #24a04d;
+  background: #8892b0;
 }
 
 button::after {
   right: -10px;
-  background: #17e25b;
+  background: #8892b0;
 }
 
 button:hover::before,
 button:hover::after {
-  width: 59%;
+  width: 61%;
 }
 
 button:hover span {
-  color: #b1ffbc;
+  color: #0a192f;
   transition: 0.3s;
   font-weight: bold;
 }
@@ -189,11 +217,6 @@ button:hover span {
 button span {
   font-size: 15px;
   transition: all 0.3s ease-in;
-}
-
-button img {
-  margin-left: 5px;
-  width: 12px;
 }
 
 /* Styling bagian section Contact Us */
@@ -476,6 +499,27 @@ footer {
   color: #595959;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.large {
+  display: flex;
+  justify-content: center;
+  grid-column: span 2; /* Memastikan kotak besar memanjang ke seluruh 5 kolom */
+  grid-row: span 1; /* Kotak besar tetap berada di baris pertama */
+}
+
+.large h1 {
+  font-size: 30px;
+}
+
+.small {
+  grid-column: span 1; /* Setiap grid kecil mengambil satu kolom */
+  grid-row: span 1; /* Setiap grid kecil mengambil satu baris */
+}
+
 .grid-container h2 {
   font-size: 30px;
   color: #4d4d4d;
@@ -486,16 +530,10 @@ footer {
   color: #595959;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
 .grid-item {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-right: 50px;
+  margin-right: 45px;
   margin-bottom: 25px;
 }
 
@@ -509,6 +547,7 @@ footer {
   align-items: center;
   justify-content: space-around;
   padding-top: 60px;
+  padding-right: 60px;
 }
 
 .bg-about img {
@@ -605,21 +644,27 @@ footer {
     font-size: 40px;
   }
 
-  .img {
+  .responsive-bg {
     width: auto;
     height: auto;
     padding-right: 0;
-    padding-top: 90px;
+  }
+
+  .img {
+    padding-top: 100px;
+    width: 350px;
+    height: 350px;
   }
 
   /* styling tablet about section */
   .bg-about img {
     width: 380px;
   }
+
   .card-about p {
     font-size: 18px;
-    padding-right: 50px;
   }
+
   .card-about {
     padding-left: 30px;
   }
@@ -733,8 +778,8 @@ footer {
 
   .img {
     padding-top: 60px;
-    width: 144.32px;
-    height: 166.6px;
+    width: 250px;
+    height: 250px;
   }
 
   button {

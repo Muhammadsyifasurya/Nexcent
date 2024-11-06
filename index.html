@@ -40,9 +40,13 @@
             <div class="container">
                 <h2>Your Professional Website Development Partner</h2>
                 <p>We create personalized websites to enhance your business presence online and attract clients</p>
-                <button aria-label="learn more"><span>Learn More</span><img src="asset/ic_panah.svg" alt=""></button>
+                <button aria-label="learn more"><span>Learn More</span></button>
             </div>
-            <img class="img" src="asset/bg_section_1.svg" alt="ini Gambar">
+            <picture class="responsive-bg">
+                <source class="source-small" media="(max-width: 768px)" srcset="./asset/bg_section_3.svg">
+                <source class="source-medium" media="(max-width: 1024px)" srcset="./asset/bg_section_2.svg">
+                <img class="img" src="./asset/bg_section_1.svg" alt="Large Image" />
+            </picture>
         </section>
 
         <section class="about" id="about">
@@ -57,7 +61,7 @@
                     the initial concept to the final launch, we’re here to bring your vision to life and support you in
                     reaching your business goals. Let us help you make a lasting impression in today’s competitive
                     digital landscape.</p>
-                <button aria-label="our story"><span>Our Story</span><img src="asset/ic_panah.svg" alt=""></button>
+                <button aria-label="our story"><span>Our Story</span></button>
             </div>
         </section>
 
@@ -90,28 +94,31 @@
                     growth and success.</p>
             </div>
             <div class="grid-container">
-                <div class="grid-item">
+                <div class="grid-item large">
+                    <h1>Our Community</h1>
+                </div>
+                <div class="grid-item small">
                     <img src="asset/ic_member.svg" alt="member">
                     <div>
                         <h2>2,245,356</h2>
                         <p>Members</p>
                     </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item small">
                     <img src="asset/ic_groub.svg" alt="member">
                     <div>
                         <h2>46,328</h2>
                         <p>Clubs</p>
                     </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item small">
                     <img src="asset/ic_booking1.svg" alt="member">
                     <div>
                         <h2>828,867</h2>
                         <p>Event Bookings</p>
                     </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item small">
                     <img src="asset/ic_payment1.svg" alt="member">
                     <div>
                         <h2>1,926,436</h2>
