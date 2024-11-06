@@ -18,11 +18,16 @@ This project is a responsive website featuring a modern design that showcases a 
 - **Smooth Scrolling**: Enhances navigation experience.
 - **Interactive Elements**: Buttons and navigation items include hover effects for user engagement.
 
-## Future Improvements
+## What’s New ?
 
 - **Tablet Optimization**: Enhancing the website's display on tablet devices to ensure better accessibility and user experience.
 - **Performance Enhancements**: Implementing strategies to improve loading times and overall site performance.
-- **User Feedback Integration**: Collecting and applying user feedback to inform updates and enhancements.
+  ![Website Screenshot](asset/screenshot/performance.jpg)
+- **Hero Section**:
+  - Applying text shadow.
+  - parallax background image who still responsive using (cover).
+  - Applying responsive image with picture + source + srcset method.
+- **Community Section**: Applying Asynchronous grid at community section.
 
 ## Technologies Used
 
@@ -37,7 +42,7 @@ This project is a responsive website featuring a modern design that showcases a 
 ### Global Styles
 
 - **Reset Styles**: Removes default margin and padding for all elements to create a consistent look.
-- **Font Family**: Applies "Open Sans" for readability.
+- **Font Family**: Applies "Open Sans" for readability using @font-face.
 - **Scroll Behavior**: Smooth scrolling is enabled for improved navigation.
 
 ### Navbar
@@ -48,9 +53,9 @@ This project is a responsive website featuring a modern design that showcases a 
 
 ### Hero Section
 
-- **Background Color**: A soft gray (`#f5f7fa`) enhances visibility.
+- **Background Image**: Includes A Parallax background images responsive using cover.
 - **Flexbox Layout**: Centers content both horizontally and vertically.
-- **Image Styling**: Includes responsive adjustments for images.
+- **Image Styling**: Includes responsive adjustments for images with picture + source + srcset method.
 
 ### About Section
 
@@ -58,7 +63,7 @@ This project is a responsive website featuring a modern design that showcases a 
 
 ### Community Section
 
-- **Grid Layout**: Displays community information in a flexible grid system for better organization.
+- **Grid Layout**: Displays community information in a Asynchronous grid system for better organization.
 
 ### Our Client Section
 
@@ -84,6 +89,7 @@ Media queries adjust styles based on screen size, ensuring optimal user experien
 ### Breakpoints
 
 - **Mobile Styles**: Adjustments made at `max-width: 768px` for better usability on smaller screens.
+- **Tablet Styles**: Adjustments made at `max-width: 1024px` for better usability on medium screens.
 
 ## Semantic HTML Implementation
 
