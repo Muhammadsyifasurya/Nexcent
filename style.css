@@ -111,7 +111,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(./asset/bg_parallax4.jpg);
+  background-image: url(./asset/bg_parallax.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
