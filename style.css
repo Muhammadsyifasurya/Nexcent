@@ -535,6 +535,7 @@ footer {
   align-items: center;
   margin-right: 45px;
   margin-bottom: 25px;
+  gap: 15px;
 }
 
 .grid-item img {
@@ -897,6 +898,10 @@ footer {
 
   .grid-item img {
     width: 28px;
+  }
+
+  .large h1 {
+    font-size: 19px;
   }
 
   /* styling tablet contact */
