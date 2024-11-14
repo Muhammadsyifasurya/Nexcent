@@ -1,35 +1,36 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/f-sXtHED)
 
-# Project Title: Professional Website Development
+# Hello, I'm Muhammad Syifa Surya Saputra 👋
 
-_Creator: Muhammad Syifa Surya Saputra_
+As a Front-End Developer with a strong passion for Software Engineering, I focus on creating visually appealing and highly functional digital experiences. My work emphasizes the use of cutting-edge web technologies to deliver user-centered solutions. Through this website, I share my projects, as well as valuable insights and knowledge in the field. I am always open to new collaborations and connections, so please feel free to reach out to me through the contact options below :
 
-## View the Deployed Website
+- **Email**: syifamuhammad3139@example.com
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/muhammadsyifasuryasaputra/)
+- **GitHub**: [GitHub Profile](https://github.com/Muhammadsyifasurya)
 
-You can view the live version of the website [here](https://muhammadsyifasurya.github.io/Nexcent/).
+---
 
-## Overview
+## 🌐 About This Website
 
-This project is a responsive website featuring a modern design that showcases a variety of sections including a fixed navbar, a hero section, an about section, community details, and a contact form. The site is built with HTML and styled with CSS to ensure a seamless user experience across devices.
+This project is a responsive website featuring a modern design that showcases a variety of sections including a fixed navbar, a hero section, an about section, community details, and a contact form. The site is built with HTML and styled with CSS to ensure a seamless user experience across devices. [View the live version here](https://stilllearning.site/)
 
-## Features
+## 📑 Website Structure
 
-- **Responsive Design**: Adapts to different screen sizes using media queries.
-- **Smooth Scrolling**: Enhances navigation experience.
-- **Interactive Elements**: Buttons and navigation items include hover effects for user engagement.
+1. **Home**: Main landing page showcasing the hero section with key features.
+2. **About**: Information on the projects I’ve worked on.
+3. **Our Clients**: A closer look at the clients and success stories.
+4. **Community**: A celebration of our growing community with over 2 million members, 46k+ clubs, and numerous events and payments.
+5. **Contact Us**: Get in touch with me for questions and collaborations.
 
-## What’s New ?
+## 🔧 Tools Used
 
-- **Tablet Optimization**: Enhancing the website's display on tablet devices to ensure better accessibility and user experience.
-- **Performance Enhancements**: Implementing strategies to improve loading times and overall site performance.
-  ![Website Screenshot](asset/screenshot/performance.jpg)
-- **Hero Section**:
-  - Applying text shadow.
-  - parallax background image who still responsive using (cover).
-  - Applying responsive image with picture + source + srcset method.
-- **Community Section**: Applying Asynchronous grid at community section.
+A list of tools and technologies used to build this site, such as:
 
-## Technologies Used
+- **Framework** : Nothing
+- **Library** : Tailwind CSS
+- **Hosting Platform** : Netlify
+
+## 🛠️ Technologies Used
 
 - **HTML5**: For semantic structure and accessibility.
 - **CSS3**: To style the website and ensure responsive design.
@@ -37,110 +38,114 @@ This project is a responsive website featuring a modern design that showcases a 
 - **Git/GitHub**: Version control and project management.
 - **Visual Studio Code**: Primary code editor used for development.
 
-## CSS Structure
+## 📝 Semantic HTML Implementation
 
-### Global Styles
+- **`<header>`**: Defines the top section of the page, often containing navigation and introductory content.
+- **`<nav>`**: Marks the navigation links or menu, enhancing site structure.
+- **`<main>`**: Represents the main content of the document, separate from other parts like headers or footers.
+- **`<section>`**: Groups related content, making it easier to organize and understand.
+- **`<footer>`**: Specifies footer information, like copyright or contact details, for better structure.
 
-- **Reset Styles**: Removes default margin and padding for all elements to create a consistent look.
-- **Font Family**: Applies "Open Sans" for readability using @font-face.
-- **Scroll Behavior**: Smooth scrolling is enabled for improved navigation.
+## 🎨 CSS Structure
 
-### Navbar
+- **Reset Styles**: Removed default margin/padding, ensuring consistency across elements.
+- **Font Family**: Used "Open Sans" for readability with `@font-face`.
+- **Scroll Behavior**: Enabled smooth scrolling for better navigation.
+- **Fixed Positioning**: Navbar stays at the top for easy access.
+- **Flexbox Layout**: Used for alignment, spacing, and responsive design.
+- **Hamburger Menu**: Added a responsive toggle for smaller screens.
+- **Parallax Background**: Used for responsive images in the hero section.
+- **Grid Layout**: Applied for community and client sections with asymmetry.
+- **Image Slider**: Displayed client logos with a horizontal slider.
+- **Hover Effects**: Applied to buttons, client logos, and animations.
+- **Card Layout**: Contact information displayed within rounded cards.
+- **Media Queries**: Ensured responsive layout for mobile (`max-width: 768px`) and tablet (`max-width: 1024px`).
 
-- **Fixed Positioning**: The navbar remains fixed at the top, ensuring easy access.
-- **Flexbox Layout**: Utilizes flexbox for alignment and spacing of items.
-- **Hamburger Menu**: Displays a responsive toggle for smaller screens, transitioning between open and closed states.
+## 🔍 Lighthouse Performance
 
-### Hero Section
+The website has been tested using Google Lighthouse, and it achieved perfect scores across all categories:
 
-- **Background Image**: Includes A Parallax background images responsive using cover.
-- **Flexbox Layout**: Centers content both horizontally and vertically.
-- **Image Styling**: Includes responsive adjustments for images with picture + source + srcset method.
+- **Performance**: 100
+- **Accessibility**: 100
+- **Best Practices**: 100
+- **SEO**: 100
 
-### About Section
+This ensures that the website is fast, accessible, follows best practices, and is optimized for search engines.
 
-- **Flexbox Alignment**: Centers content alongside images for a balanced layout.
+![Lighthouse Performance Screenshot](asset/screenshot/performance.jpg)
 
-### Community Section
-
-- **Grid Layout**: Displays community information in a Asynchronous grid system for better organization.
-
-### Our Client Section
-
-- **Responsive**: Adjusts layout for various screen sizes using flexbox and appropriate padding.
-- **Image Slider**: Displays client logos in a horizontal slider with flowing animation, enhancing user interaction.
-- **Hover Effects**: Animation pauses on hover, improving user experience.
-- **Organized Layout**: Allows for balanced spacing and effective arrangement of elements with consistent margins.
-
-### Contact Section
-
-- **Card Layout**: Information and forms are displayed within rounded cards for a modern look.
-- **Input Fields**: Styled for usability with transitions on focus.
-
-### Button Styles
-
-- **Hover Effects**: Buttons feature animations on hover, enhancing interactivity.
-- **Custom Shape and Color**: Rounded corners and gradient backgrounds are used for aesthetic appeal.
-
-## Responsive Design
-
-Media queries adjust styles based on screen size, ensuring optimal user experience on mobile and desktop devices.
-
-### Breakpoints
-
-- **Mobile Styles**: Adjustments made at `max-width: 768px` for better usability on smaller screens.
-- **Tablet Styles**: Adjustments made at `max-width: 1024px` for better usability on medium screens.
-
-## Semantic HTML Implementation
-
-The project uses Semantic HTML to improve website accessibility and SEO. HTML5 elements like `<header>`, `<nav>`, `<main>`, `<section>`, and `<footer>` provide a clear document structure for both users and search engines. This approach improves readability, allows screen readers to interpret the content more effectively, and enhances inclusivity.
-
-![Website Screenshot](asset/screenshot/Hero.PNG)
-
-## About
-
-![About Section](asset/screenshot/About.PNG)
-This section provides an overview of the company and its mission, engaging users with relevant information.
-
-## Contact
-
-![Contact Section](asset/screenshot/Contact%20Us.PNG)
-This section provides various ways to get in touch, enhancing user engagement and support.
-
-## Sidebar (Mobile View)
-
-![Sidebar Mobile View](asset/screenshot/Sidebar.png)
-
-This image demonstrates the sidebar's appearance in mobile view, ensuring a user-friendly experience across devices.
-
-## Conclusion
-
-This project demonstrates the integration of responsive design principles with modern CSS techniques, providing a user-friendly interface. The layout is flexible and designed to maintain functionality across various devices.
-
-## Installation
+## ⚙️ Installation
 
 To get this project running on your local machine, follow these steps:
 
-**Clone the Repository**  
-Use the following command to clone the repository:
+1. **Clone the Repository**  
+   Use the following command to clone the repository:
 
-```bash
-git clone https://github.com/Muhammadsyifasurya/Nexcent.git
-```
+   ```bash
+   git clone https://github.com/Muhammadsyifasurya/Nexcent.git
+   ```
 
-## Connect with Me
+2. **Enter to the folder**
 
-<div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-start;">
-  <a href="https://www.linkedin.com/in/muhammadsyifasuryasaputra/" target="_blank" style="text-decoration: none; display: flex; align-items: center;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 20px; height: 20px; margin-right: 8px;">
-    <span style="font-size: 16px; color: #0077B5;">Muhammad Syifa Surya Saputra</span>
-  </a>
-  <a href="https://www.instagram.com/muhammadsyifasurya/" target="_blank" style="text-decoration: none; display: flex; align-items: center;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 20px; height: 20px; margin-right: 8px;">
-    <span style="font-size: 16px; color: #C13584;">Muhammad Syifa Surya Saputra</span>
-  </a>
-</div>
-<br>
+   ```bash
+   cd Nexcent
+   ```
 
-**Front-End Web Developer | Passionate about clean code and innovative design.**  
-Feel free to reach out for collaboration or feedback!
+3. **Open with Visual Studio Code**
+
+   ```bash
+   code .
+   ```
+
+## 🚀 Deployment Documentation
+
+### 1. Registering and Setting Up Netlify
+
+![Purchasing a Domain](asset/screenshot/3.png)
+
+- **Register on Netlify**
+- Visit [Netlify](https://www.netlify.com/) to create a new account.
+- After registration, log in to your Netlify account.
+
+### 2. Connecting Netlify to the GitHub Project
+
+![Purchasing a Domain](asset/screenshot/4.png)
+
+- **Deploying from GitHub**
+- In the Netlify dashboard, click **Add New Site** > **Import an Existing Project**.
+- Select **GitHub** as the source, authorize Netlify to access your GitHub account.
+- Choose the repository to deploy and set the `main` branch as the auto-deployment source.
+- Click **Deploy** to start the process.
+
+### 3. Purchasing and Connecting a Domain to Netlify
+
+#### a. Purchasing a Domain
+
+![Purchasing a Domain](asset/screenshot/1.png)
+
+- Purchase a domain from a provider like [Niagahoster](https://www.niagahoster.co.id/).
+- In the Niagahoster dashboard, go to **Domain** > **Search & Check Domain**.
+- Enter your desired domain, click **Check Now**, and select your custom domain.
+
+#### b. Connecting the Domain to Netlify
+
+![Connecting the Domain](asset/screenshot/2.png)
+
+- In Netlify, navigate to **Site Settings** > **Domain Management** > **Add a Domain**.
+- Enter the purchased domain and verify it.
+
+#### 3. Updating DNS Nameservers
+
+![Purchasing a Domain](asset/screenshot/5.png)
+
+- Copy the DNS nameservers provided by Netlify.
+- Go back to Niagahoster, select **Manage** for your domain, and update the nameservers.
+- Wait for the DNS changes to propagate. Your site will be accessible via your custom domain once completed.
+
+### 4. Summary
+
+- **Netlify**: Registration and auto-deployment setup completed.
+- **GitHub**: GitHub repository connected for continuous deployment on Netlify.
+- **Domain**: Custom domain purchased and DNS settings configured for Netlify.
+
+---
