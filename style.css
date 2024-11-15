@@ -1094,6 +1094,15 @@ input#image3:checked ~ .control label:nth-child(3) {
     text-align: center;
     font-size: 15px;
   }
+
+  .carousel-image {
+    width: 100%;
+  }
+
+  .images {
+    gap: 70px;
+  }
+
   .slider {
     padding: 40px 0;
     height: 50px;
