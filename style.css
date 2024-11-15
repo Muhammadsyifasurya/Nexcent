@@ -44,8 +44,7 @@ body.dark-mode {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("https://muhammadsyifasurya.github.io/Nexcent/font/OpenSans-Regular.ttf")
-    format("truetype");
+  src: url("./font/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
