@@ -22,15 +22,22 @@
             </div>
             <div class="nav-logo">
                 <a href="#">
-                    <img src="asset/Logo.svg" alt="Logo man">
+                    <img src="asset/Logo.svg" alt="Logo man" class="logo">
                 </a>
             </div>
             <ul class="nav-list">
-                <li><a href="#"><img src="asset/ic_home.svg" alt="">Home</a></li>
-                <li><a href="#about"><img src="asset/ic_about.svg" alt="">About</a></li>
-                <li><a href="#ourclient"><img src="asset/ic_our_client.svg" alt="">Our Client</a></li>
-                <li><a href="#community"><img src="asset/ic_community.svg" alt="">Community</a></li>
-                <li><a href="#contact-us"><img src="asset/ic_contact_us.svg" alt="">Contact Us</a></li>
+                <li class="list-hover"><a href="#"><img src="asset/ic_home.svg" alt="">Home</a></li>
+                <li class="list-hover"><a href="#about"><img src="asset/ic_about.svg" alt="">About</a></li>
+                <li class="list-hover"><a href="#ourclient"><img src="asset/ic_our_client.svg" alt="">Our Client</a>
+                </li>
+                <li class="list-hover"><a href="#community"><img src="asset/ic_community.svg" alt="">Community</a></li>
+                <li class="list-hover"><a href="#contact-us"><img src="asset/ic_contact_us.svg" alt="">Contact Us</a>
+                </li>
+                <li>
+                    <button id="toggleDarkMode" class="toggle-button">
+                        <span class="toggle-button__icon"></span>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -40,7 +47,7 @@
             <div class="container">
                 <h2>Your Professional Website Development Partner</h2>
                 <p>We create personalized websites to enhance your business presence online and attract clients</p>
-                <button aria-label="learn more"><span>Learn More</span></button>
+                <button aria-label="learn more" class="button"><span>Learn More</span></button>
             </div>
             <picture class="responsive-bg">
                 <source class="source-small" media="(max-width: 768px)" srcset="./asset/bg_section_3.svg">
@@ -61,7 +68,7 @@
                     the initial concept to the final launch, we’re here to bring your vision to life and support you in
                     reaching your business goals. Let us help you make a lasting impression in today’s competitive
                     digital landscape.</p>
-                <button aria-label="our story"><span>Our Story</span></button>
+                <button aria-label="our story" class="button"><span>Our Story</span></button>
             </div>
         </section>
 
@@ -73,9 +80,9 @@
                     and lot's more.​</p>
 
                 <div class="carousel-image">
-                    <input type="radio" name="carousel" id="image1" title="image1">
-                    <input type="radio" name="carousel" id="image2" title="image2" checked>
-                    <input type="radio" name="carousel" id="image3" title="image3">
+                    <input type="radio" name="carousel" id="image1" title="image1" class="radio">
+                    <input type="radio" name="carousel" id="image2" title="image2" class="radio" checked>
+                    <input type="radio" name="carousel" id="image3" title="image3" class="radio">
 
                     <div class="images">
                         <div class="image image1">
@@ -171,7 +178,7 @@
         </section>
 
         <section class="contact" id="contact-us">
-            <h2>Contact Us</h2>
+            <h2 class="contact-h2">Contact Us</h2>
             <p>Any question or remarks? Just write us a message!</p>
 
             <div class="card">
@@ -209,7 +216,7 @@
                         </label>
                     </fieldset>
                     <div class="button-send">
-                        <button aria-label="send"><span>Send Message</span></button>
+                        <button aria-label="send" class="button"><span>Send Message</span></button>
                     </div>
                 </form>
             </div>
