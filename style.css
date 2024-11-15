@@ -626,7 +626,7 @@ footer {
 }
 
 .card-images {
-  background-color: #383838;
+  background-color: #f5f7fa;
   width: 540px;
   display: flex;
   flex-direction: column;
@@ -645,12 +645,8 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
-.card-images p {
-  color: var(--text-color-p);
-}
-
 .card-images a {
-  color: #4caf4f;
+  color: #2a5f2a;
   text-decoration: none;
   padding: 4px 15px;
   border-radius: 10px;
