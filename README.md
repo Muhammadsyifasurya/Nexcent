@@ -56,10 +56,12 @@ A list of tools and technologies used to build this site, such as:
 - **Hamburger Menu**: Added a responsive toggle for smaller screens.
 - **Parallax Background**: Used for responsive images in the hero section.
 - **Grid Layout**: Applied for community and client sections with asymmetry.
-- **Image Slider**: Displayed client logos with a horizontal slider.
+- **Image Slider**: Displayed client logos with a horizontal slider (carousel).
 - **Hover Effects**: Applied to buttons, client logos, and animations.
 - **Card Layout**: Contact information displayed within rounded cards.
 - **Media Queries**: Ensured responsive layout for mobile (`max-width: 768px`) and tablet (`max-width: 1024px`).
+- **Dark Mode**: Implemented dark mode with color scheme changes for backgrounds and text, ensuring a smooth transition between light and dark modes.
+- **Carousel**: Added an image slider (carousel) feature for showcasing content with automatic sliding and navigation controls.
 
 ## 🔍 Lighthouse Performance
 
