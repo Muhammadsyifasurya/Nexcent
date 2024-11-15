@@ -626,7 +626,7 @@ footer {
 }
 
 .card-images {
-  background-color: #f5f7fa;
+  background-color: #383838;
   width: 540px;
   display: flex;
   flex-direction: column;
@@ -643,6 +643,10 @@ footer {
 
 .card-images:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card-images p {
+  color: var(--text-color-p);
 }
 
 .card-images a {
