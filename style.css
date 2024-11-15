@@ -626,7 +626,7 @@ footer {
 }
 
 .card-images {
-  background-color: #f5f7fa;
+  background-color: var(--background-color);
   width: 540px;
   display: flex;
   flex-direction: column;
